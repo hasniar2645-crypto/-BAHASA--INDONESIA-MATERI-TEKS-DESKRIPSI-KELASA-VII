@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MPI Teks Deskripsi | Bahasa Indonesia</title>
+<style>
+:root{--navy:#13294b;--blue:#2864dc;--teal:#13a89e;--gold:#ffca62;--paper:#f4f7fb;--ink:#17233b;--muted:#62718a;--white:#fff;--pink:#fbe6ec;--green:#dff7eb}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+header{background:linear-gradient(120deg,#142b50,#2864dc);color:white;padding:22px max(5vw,20px);display:flex;justify-content:space-between;gap:18px;align-items:center;flex-wrap:wrap}
+.brand{font-weight:800;letter-spacing:.3px}.brand small{display:block;font-weight:500;opacity:.8;font-size:.85rem}
+main{max-width:1120px;margin:28px auto;padding:0 18px;display:grid;grid-template-columns:245px 1fr;gap:22px}
+nav,.panel{background:white;border-radius:20px;box-shadow:0 8px 28px #19315b12}
+nav{padding:16px;height:max-content;position:sticky;top:15px}
+nav h3{margin:4px 8px 12px;font-size:.9rem;color:var(--muted);text-transform:uppercase;letter-spacing:1px}
+.navbtn{display:flex;width:100%;text-align:left;border:0;background:transparent;padding:11px 12px;margin:3px 0;border-radius:11px;color:var(--ink);font:inherit;cursor:pointer;gap:10px;align-items:center}
+.navbtn:hover,.navbtn.active{background:#eaf0ff;color:#174dc0;font-weight:700}
+.panel{padding:clamp(20px,4vw,42px);min-height:560px}
+.eyebrow{font-size:.78rem;text-transform:uppercase;letter-spacing:1.5px;font-weight:800;color:var(--teal)}
+h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.08;margin:12px 0}h2{font-size:clamp(1.5rem,3vw,2.1rem);margin:8px 0 12px}h3{margin-bottom:8px}
+p{color:#42516b}.hero{display:grid;grid-template-columns:1.3fr .7fr;gap:20px;align-items:center}
+.art{background:linear-gradient(145deg,#e8f5ff,#e4fff6);border-radius:22px;padding:22px;text-align:center;font-size:5.5rem;min-height:200px;display:grid;place-items:center}
+.pill{display:inline-block;background:#e7f8f5;color:#087e77;border-radius:999px;padding:5px 12px;font-size:.82rem;font-weight:700}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+button.primary,button.secondary{border:0;border-radius:12px;padding:12px 18px;font:inherit;font-weight:750;cursor:pointer}
+.primary{background:var(--blue);color:white}.primary:hover{background:#174dbb}.secondary{background:#edf1f8;color:#243451}
+.cardgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:18px 0}
+.card{border:1px solid #e0e7f1;border-radius:16px;padding:17px;background:#fff}
+.card .emoji{font-size:2rem}.card h3{margin:6px 0}.card p{margin:4px 0}
+.question{border:1px solid #e1e8f2;border-radius:15px;padding:18px;margin:16px 0}
+.option{display:flex;gap:10px;align-items:flex-start;padding:10px;border-radius:10px;margin:7px 0;background:#f6f8fc;cursor:pointer}
+.option:has(input:checked){background:#e9efff;outline:1px solid #9db7ff}
+input[type=radio],input[type=checkbox]{margin-top:6px;accent-color:var(--blue)}
+.feedback{padding:12px 15px;border-radius:12px;margin-top:12px;font-weight:650}
+.good{background:var(--green);color:#12613f}.bad{background:var(--pink);color:#91314d}
+.progress{height:7px;background:#dfe6f1;border-radius:10px;overflow:hidden;min-width:110px}.progress span{display:block;height:100%;background:var(--gold);width:0}
+.topline{display:flex;align-items:center;gap:12px}.topline small{opacity:.85}
+textarea,input[type=text]{width:100%;border:1px solid #ccd6e5;border-radius:10px;padding:12px;font:inherit}
+textarea{min-height:105px;resize:vertical}
+figure{margin:0;padding:18px;border-radius:16px;background:#f1f6ff}figcaption{font-size:.9rem;color:var(--muted);margin-top:8px}
+.tag{display:inline-block;background:#fef3d9;border-radius:8px;padding:3px 8px;font-size:.85rem;margin:3px}
+footer{text-align:center;padding:22px;color:var(--muted);font-size:.9rem}
+.hidden{display:none!important}
+@media(max-width:780px){main{grid-template-columns:1fr;margin-top:14px}nav{position:static}.navlist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:1fr}.art{min-height:130px;font-size:4rem}.panel{min-height:unset}.cardgrid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+ <div class="brand">📘 RUANG BELAJAR <small>Multimedia Pembelajaran Interaktif</small></div>
+ <div class="topline"><small>Bahasa Indonesia • Teks Deskripsi</small><div class="progress" aria-label="Kemajuan"><span id="progressBar"></span></div></div>
+</header>
+<main>
+<nav>
+ <h3>Menu pembelajaran</h3>
+ <div class="navlist" id="navlist">
+  <button class="navbtn active" data-page="home">🏠 Beranda</button>
+  <button class="navbtn" data-page="apersepsi">💡 Apersepsi</button>
+  <button class="navbtn" data-page="awal">🧭 Asesmen awal</button>
+  <button class="navbtn" data-page="materi">📚 Materi pokok</button>
+  <button class="navbtn" data-page="simulasi">🧩 Simulasi</button>
+  <button class="navbtn" data-page="quis">🎯 Kuis</button>
+  <button class="navbtn" data-page="akhir">📝 Asesmen akhir</button>
+  <button class="navbtn" data-page="refleksi">🌱 Refleksi</button>
+ </div>
+</nav>
+<section class="panel" id="content" aria-live="polite"></section>
+</main>
+<footer>MPI Teks Deskripsi • Dapat digunakan offline setelah ZIP diekstrak • Belajar dengan jujur dan menyenangkan</footer>
+<script>
+const pages=['home','apersepsi','awal','materi','simulasi','quis','akhir','refleksi'];
+const titles={home:'Beranda',apersepsi:'Apersepsi',awal:'Asesmen awal',materi:'Materi pokok',simulasi:'Simulasi',quis:'Kuis',akhir:'Asesmen akhir',refleksi:'Refleksi'};
+let completed=new Set(), quizScore=null, awalScore=null, akhirScore=null;
+const content=document.getElementById('content');
+function btn(text,fn,cls='primary'){return `<button class="${cls}" onclick="${fn}">${text}</button>`}
+function go(p){render(p);document.querySelectorAll('.navbtn').forEach(b=>b.classList.toggle('active',b.dataset.page===p));}
+document.querySelectorAll('.navbtn').forEach(b=>b.addEventListener('click',()=>go(b.dataset.page)));
+function finish(p){completed.add(p);document.getElementById('progressBar').style.width=(completed.size/7*100)+'%';}
+function render(p){
+ if(p==='home')content.innerHTML=`<div class="hero"><div><span class="pill">Ayo amati, pahami, lalu praktikkan!</span><h1>Mengenal Teks Deskripsi</h1><p>Jelajahi kata-kata yang membuat pembaca seolah-olah melihat, mendengar, atau merasakan objek yang kita ceritakan.</p><p><b>Tujuan belajar:</b> peserta didik mampu menjelaskan ciri dan struktur teks deskripsi serta menulis deskripsi singkat dengan pilihan kata yang tepat.</p><div class="actions">${btn('Mulai belajar →',"go('apersepsi')")}</div></div><div class="art">🏞️🌳🏡</div></div><div class="cardgrid"><div class="card"><div class="emoji">🔎</div><h3>Amati</h3><p>Temukan detail dari objek di sekitar.</p></div><div class="card"><div class="emoji">✍️</div><h3>Gambarkan</h3><p>Pilih kata yang jelas dan pancaindra.</p></div></div><p><b>Petunjuk:</b> pilih menu di sebelah kiri. Kerjakan asesmen, coba simulasi, lalu tutup dengan refleksi.</p>`;
+ if(p==='apersepsi')content.innerHTML=`<span class="eyebrow">Bagian 1</span><h2>Apersepsi: Apa yang kamu lihat?</h2><div class="hero"><div><p>Bayangkan kamu sedang berada di pantai. Pasir terasa lembut, ombak berkejaran, dan angin bertiup sejuk.</p><p>Kalimat yang baik bukan hanya menyebut nama tempat, tetapi membantu pembaca membayangkannya.</p><p><b>Pertanyaan pemantik:</b> Jika kamu menceritakan tempat favoritmu kepada teman yang belum pernah ke sana, detail apa yang akan kamu ceritakan?</p></div><div class="art">🌊🏖️☀️</div></div><label for="pemantik"><b>Tulis satu atau dua kalimat tentang tempat favoritmu.</b></label><textarea id="pemantik" placeholder="Tempat favoritku adalah ..."></textarea><div class="actions">${btn('Simpan jawaban & lanjut',"saveText('pemantik','apersepsi','awal')")}</div>`;
+ if(p==='awal')content.innerHTML=`<span class="eyebrow">Bagian 2</span><h2>Asesmen awal</h2><p>Pilih jawaban yang menurutmu paling tepat. Hasil ini untuk mengetahui pengetahuan awalmu.</p>${question('a1','1. Tujuan utama teks deskripsi adalah ...',['Menceritakan urutan peristiwa','Menggambarkan objek secara terperinci','Menyampaikan langkah membuat sesuatu'],1)}${question('a2','2. Kata yang melibatkan indra penciuman adalah ...',['Harum','Bergerigi','Benderang'],0)}${question('a3','3. Objek yang dapat dideskripsikan ialah ...',['Hanya manusia','Hanya tempat wisata','Orang, tempat, benda, atau suasana'],2)}<div class="actions">${btn('Periksa asesmen awal',"checkAssessment('awal')")}</div><div id="feedback-awal"></div>`;
+ if(p==='materi')content.innerHTML=`<span class="eyebrow">Bagian 3</span><h2>Materi pokok: Teks Deskripsi</h2><p><b>Teks deskripsi</b> adalah teks yang menggambarkan orang, tempat, benda, atau suasana secara rinci sehingga pembaca seolah-olah dapat melihat atau merasakannya.</p><div class="cardgrid"><div class="card"><div class="emoji">🎯</div><h3>Tujuan</h3><p>Membantu pembaca membayangkan objek dengan jelas.</p></div><div class="card"><div class="emoji">👁️👂👃</div><h3>Ciri-ciri</h3><p>Menggunakan detail khusus, kata sifat, dan kesan pancaindra.</p></div></div><h3>Struktur umum</h3><div class="cardgrid"><div class="card"><span class="tag">1. Identifikasi</span><p>Memperkenalkan objek yang dideskripsikan.</p></div><div class="card"><span class="tag">2. Deskripsi bagian</span><p>Menjelaskan ciri, bagian, suasana, atau detail objek.</p></div></div><h3>Contoh teks</h3><figure><b>Perpustakaan Sekolahku</b><p>Perpustakaan sekolahku berada di dekat ruang guru. Ruangannya bersih dan terang. Rak-rak cokelat tersusun rapi di sepanjang dinding. Aroma buku dan udara sejuk membuatku nyaman membaca di sana.</p><figcaption>Identifikasi: kalimat pertama. Deskripsi bagian: kalimat berikutnya yang menjelaskan keadaan perpustakaan.</figcaption></figure><h3>Ingat!</h3><p>Gunakan kata yang konkret dan spesifik. “Bunganya bagus” kurang rinci dibandingkan “Bunga merah itu memiliki kelopak lembut dan aroma manis.”</p><div class="actions">${btn('Saya sudah memahami',"completeAndGo('materi','simulasi')")}</div>`;
+ if(p==='simulasi')content.innerHTML=`<span class="eyebrow">Bagian 4</span><h2>Simulasi: Susun deskripsi</h2><p>Pilih detail yang paling membantu pembaca membayangkan taman sekolah. Klik pilihan yang tepat, lalu periksa hasilnya.</p><div class="art" style="font-size:4rem;min-height:120px">🌳🌷🪴</div><div class="question"><b>Kalimat mana yang paling deskriptif?</b><label class="option"><input type="radio" name="sim" value="0"> Taman sekolah itu ada di depan kelas.</label><label class="option"><input type="radio" name="sim" value="1"> Taman sekolah dipenuhi bunga kuning dan merah; daun-daunnya basah oleh embun pagi.</label><label class="option"><input type="radio" name="sim" value="2"> Kami pergi ke taman pada hari Senin.</label><div class="actions">${btn('Periksa pilihan',"checkSim()")}</div><div id="simfeedback"></div></div><div class="question"><b>Latihan menulis</b><p>Lengkapi deskripsi taman dengan satu kalimat yang menyebutkan detail warna, bentuk, suara, aroma, atau suasana.</p><textarea id="simwrite" placeholder="Di taman sekolah, ..."></textarea><div class="actions">${btn('Simpan latihan',"saveText('simwrite','simulasi','quis')","secondary")}</div></div>`;
+ if(p==='quis')content.innerHTML=`<span class="eyebrow">Bagian 5</span><h2>Kuis tantangan</h2><p>Jawab semua soal. Nilai akan ditampilkan setelah kamu memeriksa jawaban.</p>${question('q1','1. Bagian teks yang memperkenalkan objek disebut ...',['Identifikasi','Deskripsi bagian','Penutup cerita'],0)}${question('q2','2. Kalimat deskripsi yang paling kuat adalah ...',['Rumah itu besar.','Rumah itu memiliki pintu hijau tua dan jendela lebar.','Aku melihat rumah.'],1)}${question('q3','3. “Suara gemericik air terdengar lembut.” Kalimat ini terutama melibatkan indra ...',['Penglihatan','Pendengaran','Pengecapan'],1)}${question('q4','4. Kata sifat terdapat pada pilihan ...',['Berlari','Meja','Sejuk'],2)}${question('q5','5. Agar deskripsi lebih jelas, penulis sebaiknya ...',['Memakai detail khusus','Mengulang kata yang sama terus-menerus','Menghindari semua kata sifat'],0)}<div class="actions">${btn('Nilai kuis',"checkQuiz()")}</div><div id="feedback-quiz"></div>`;
+ if(p==='akhir')content.innerHTML=`<span class="eyebrow">Bagian 6</span><h2>Asesmen akhir</h2><p>Gunakan pemahamanmu untuk menjawab pertanyaan berikut.</p>${question('f1','1. Apa pengertian teks deskripsi?',['Teks yang menggambarkan objek secara rinci','Teks yang berisi percakapan saja','Teks yang selalu berisi petunjuk'],0)}${question('f2','2. Struktur umum teks deskripsi adalah ...',['Orientasi-komplikasi-resolusi','Identifikasi-deskripsi bagian','Tujuan-alat-langkah'],1)}<div class="question"><b>3. Buatlah teks deskripsi singkat (3–5 kalimat) tentang benda atau tempat yang kamu kenal. Sertakan identifikasi dan detail khusus.</b><textarea id="finalwrite" placeholder="Judul: ...&#10;..."></textarea></div><div class="actions">${btn('Periksa pilihan & simpan tulisan',"checkFinal()")}</div><div id="feedback-akhir"></div>`;
+ if(p==='refleksi')content.innerHTML=`<span class="eyebrow">Bagian 7</span><h2>Refleksi belajar 🌱</h2><p>Luangkan waktu untuk memikirkan pengalaman belajarmu.</p><div class="question"><b>Seberapa paham kamu tentang teks deskripsi?</b><label class="option"><input type="radio" name="reflect" value="3"> Sangat paham, saya bisa menulis sendiri.</label><label class="option"><input type="radio" name="reflect" value="2"> Cukup paham, tetapi masih perlu latihan.</label><label class="option"><input type="radio" name="reflect" value="1"> Saya masih membutuhkan bimbingan.</label></div><div class="question"><label for="learned"><b>Hal baru apa yang kamu pelajari?</b></label><textarea id="learned" placeholder="Hari ini saya belajar ..."></textarea><label for="next" style="display:block;margin-top:12px"><b>Apa yang ingin kamu latih lagi?</b></label><textarea id="next" placeholder="Saya ingin berlatih ..."></textarea></div><div class="actions">${btn('Selesaikan pembelajaran',"finishReflection()")}${btn('Kembali ke beranda',"go('home')","secondary")}</div><div id="feedback-reflection"></div>`;
+}
+function question(name,text,opts,correct){return `<div class="question"><b>${text}</b>${opts.map((o,i)=>`<label class="option"><input type="radio" name="${name}" value="${i}"> ${o}</label>`).join('')}</div>`}
+function selected(name){let el=document.querySelector(`input[name="${name}"]:checked`);return el?Number(el.value):null}
+function checkAssessment(which){let names=which==='awal'?['a1','a2','a3']:['f1','f2'];let answers=which==='awal'?[1,0,2]:[0,1];let score=names.reduce((s,n,i)=>s+(selected(n)===answers[i]?1:0),0);if(names.some(n=>selected(n)===null)){document.getElementById('feedback-'+which).innerHTML='<div class="feedback bad">Jawab semua pertanyaan terlebih dahulu.</div>';return}if(which==='awal')awalScore=score;document.getElementById('feedback-'+which).innerHTML=`<div class="feedback ${score===names.length?'good':'bad'}">Skor: ${score}/${names.length}. ${which==='awal'?'Gunakan hasil ini untuk mengetahui bagian yang perlu dipelajari.':'Jawaban pilihan ganda tersimpan untuk ditinjau.'}</div>${which==='awal'?btn('Lanjut ke materi',"completeAndGo('awal','materi')"):''}`;if(which==='awal')finish('awal')}
+function checkSim(){let v=selected('sim');let el=document.getElementById('simfeedback');if(v===null){el.innerHTML='<div class="feedback bad">Pilih satu jawaban terlebih dahulu.</div>';return}el.innerHTML=v===1?'<div class="feedback good">Tepat! Kalimat ini memberi detail warna dan keadaan daun, sehingga taman lebih mudah dibayangkan.</div>':'<div class="feedback bad">Coba lagi. Pilih kalimat yang memuat detail khusus, seperti warna dan keadaan objek.</div>';if(v===1)finish('simulasi')}
+function checkQuiz(){let ns=['q1','q2','q3','q4','q5'],ans=[0,1,1,2,0];if(ns.some(n=>selected(n)===null)){document.getElementById('feedback-quiz').innerHTML='<div class="feedback bad">Lengkapi semua soal sebelum memeriksa.</div>';return}quizScore=ns.reduce((s,n,i)=>s+(selected(n)===ans[i]?1:0),0);finish('quis');document.getElementById('feedback-quiz').innerHTML=`<div class="feedback ${quizScore>=4?'good':'bad'}">Nilai kuis: ${quizScore*20}/100 (${quizScore}/5 benar). ${quizScore>=4?'Bagus! Kamu sudah memahami sebagian besar materi.':'Pelajari kembali struktur dan ciri teks deskripsi, lalu coba lagi.'}</div>${btn('Lanjut ke asesmen akhir',"go('akhir')")}`}
+function checkFinal(){if(selected('f1')===null||selected('f2')===null||!document.getElementById('finalwrite').value.trim()){document.getElementById('feedback-akhir').innerHTML='<div class="feedback bad">Jawab kedua soal dan tulis deskripsi singkat terlebih dahulu.</div>';return}akhirScore=(selected('f1')===0?1:0)+(selected('f2')===1?1:0);finish('akhir');document.getElementById('feedback-akhir').innerHTML=`<div class="feedback ${akhirScore===2?'good':'bad'}">Skor pilihan ganda: ${akhirScore}/2. Tulisanmu sudah dicatat di layar ini. Periksa kembali apakah ada identifikasi objek dan detail yang konkret.</div>${btn('Lanjut ke refleksi',"go('refleksi')")}`}
+function saveText(id,done,next){let el=document.getElementById(id);if(!el||!el.value.trim()){alert('Silakan tulis jawaban terlebih dahulu.');return}finish(done);alert('Jawaban berhasil dicatat pada sesi ini.');go(next)}
+function completeAndGo(done,next){finish(done);go(next)}
+function finishReflection(){let r=selected('reflect');if(r===null||!document.getElementById('learned').value.trim()||!document.getElementById('next').value.trim()){document.getElementById('feedback-reflection').innerHTML='<div class="feedback bad">Pilih refleksi dan isi kedua kolom sebelum menyelesaikan.</div>';return}finish('refleksi');document.getElementById('feedback-reflection').innerHTML='<div class="feedback good">Selamat! Kamu telah menyelesaikan seluruh rangkaian MPI Teks Deskripsi. Terus berlatih menulis dengan detail yang jelas.</div><p><b>Ringkasan:</b> Asesmen awal '+(awalScore===null?'belum diperiksa':awalScore+'/3')+' • Kuis '+(quizScore===null?'belum dikerjakan':quizScore*20+'/100')+' • Asesmen akhir '+(akhirScore===null?'belum diperiksa':akhirScore+'/2')+'</p>'+btn('Kembali ke beranda',"go('home')","secondary")}
+render('home');
+</script>
+</body>
+</html>
